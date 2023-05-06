@@ -1,7 +1,6 @@
 # Jenkins_Demo
 
-## Installation jenkins as docker containr
-er
+## Installation jenkins as docker container
 ``` bash
 sudo apt-get update -y
 sudo docker run -p 8080:8080 -p 50000:50000 -d \
@@ -33,6 +32,10 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 ## Or Outside Container  to retrieve jenkins initation password 
 ``` bash
 docker volume inspect jenkins_home
+cd /var/lib/docker/volumes/jenkins_home/_data/secrets
+ls
+initialAdminPassword  jenkins.model.Jenkins.crumbSalt  master.key
+cat initialAdminPassword
 ```
 
 ## #to download build tools manually from inside the container (nodejs)
