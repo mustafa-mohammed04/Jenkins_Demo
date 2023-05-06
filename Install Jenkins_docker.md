@@ -1,7 +1,6 @@
 # Jenkins_Demo
-## Install jenkins with docker
 
-## Installation jenkins as docker contain
+## Installation jenkins as docker containr
 er
 ``` bash
 sudo apt-get update -y
